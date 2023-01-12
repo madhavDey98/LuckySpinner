@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style/main.css" type="text/css" />
+    <script type="text/javascript" src="./js/Winwheel.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div align="center" class="spinWheel_wrapper">
+      <div class="stoper"></div>
+      <div class="the_wheel">
+        <canvas id="canvas" width="434" height="434">
+          <p style="color: white" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+        </canvas>
+      </div>
+      <button id="pw3" class="btnRotate" onClick="powerSelected(3);">
+        <img id="spin_button" src="https://dummyimage.com/200x200/8ec75f/fff&text=SPIN" alt="Spin" onClick="startSpin();" />
+      </button>
+      <!-- <button onclick="resetWheel()">Reset</button> -->
+    </div>
+    <audio controls="controls" id="applause" src="./bundles/applause.mp3" type="audio/mp3"></audio>
+  </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/script.js"></script>
+</html>
